@@ -149,6 +149,7 @@ body {
 @media (min-width: 1200px) {
   body {
     background: url(../images/bg-intro-desktop.png);
+    background-color: var(--primary-red);
     background-position: 3px 0px;
   }
   .intro {
