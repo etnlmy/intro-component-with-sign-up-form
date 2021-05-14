@@ -1,0 +1,192 @@
+* {
+  border: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --primary-green-transparent: hsl(154, 59%, 51%, 0.8);
+  --accent-blue: hsl(248, 32%, 49%);
+  --accent-blue-transparent: hsl(248, 32%, 49%, 0.8);
+  --neutral-dark-blue: #3e3c49;
+  --neutral-graylish-blue: #b9b6d3;
+  --grey: #dedede;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-red);
+  font-weight: bold;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding-bottom: 110px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: white;
+  background: url("../images/bg-intro-mobile.png");
+  background-color: var(--primary-red);
+}
+
+.intro {
+  margin: 88px 24px 68px 24px;
+}
+
+.intro header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.intro h1 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.291667px;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  padding: 18px 66px 18px 67px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.267857px;
+  color: white;
+  width: 100%;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.button--accent-blue {
+  background-color: var(--accent-blue);
+}
+
+.button--accent-blue:hover {
+  background-color: var(--accent-blue-transparent);
+}
+
+.button--green {
+  background-color: var(--primary-green);
+}
+
+.button--green:hover {
+  background-color: var(--primary-green-transparent);
+}
+
+.button--submit {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 43px;
+  padding-right: 43px;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  margin-bottom: 8px;
+}
+
+.sign-up-form {
+  border: none;
+  border-radius: 10px;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+}
+
+.sign-up-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-form input {
+  padding: 15px;
+  border: var(--grey) 1px solid;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.sign-up-form input,
+.sign-up-form input::placeholder {
+  color: #3d3b48;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  mix-blend-mode: normal;
+}
+
+.sign-up-form input::placeholder {
+  opacity: 0.75;
+}
+
+.sign-up-form input:focus {
+  outline-color: var(--accent-blue);
+}
+
+.terms {
+  padding: 0 15px 0 15px;
+  color: #bab7d4;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 21px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body {
+    background: url(../images/bg-intro-desktop.png);
+    background-position: 3px 0px;
+  }
+  .intro {
+    margin: 121px auto;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .intro header,
+  .intro .sign-up {
+    flex: 1 1 100%;
+  }
+
+  .intro header {
+    margin: 0 30px 0 0;
+    text-align: start;
+    position: relative;
+    top: -8px;
+  }
+
+  .intro h1 {
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.520833px;
+    margin-bottom: 32px;
+  }
+
+  .sign-up-form {
+    padding: 40px;
+  }
+
+  .sign-up-form input {
+    margin-bottom: 20px;
+  }
+
+  .terms {
+    line-height: 26px;
+  }
+}
