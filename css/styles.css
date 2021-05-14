@@ -93,8 +93,9 @@ body {
 .button--submit {
   font-weight: 600;
   text-transform: uppercase;
-  padding-left: 43px;
-  padding-right: 43px;
+  letter-spacing: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
   margin-bottom: 8px;
 }
