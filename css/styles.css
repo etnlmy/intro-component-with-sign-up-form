@@ -113,11 +113,16 @@ body {
   flex-direction: column;
 }
 
+.sign-up-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
 .sign-up-form input {
   padding: 15px;
   border: var(--grey) 1px solid;
   border-radius: 5px;
-  margin-bottom: 16px;
 }
 
 .sign-up-form input,
@@ -136,6 +141,30 @@ body {
 
 .sign-up-form input:focus {
   outline-color: var(--accent-blue);
+}
+
+.sign-up-form input:focus.invalid {
+  outline: none;
+}
+
+.sign-up-form input.invalid {
+  color: var(--primary-red);
+  border: var(--primary-red) 2px solid;
+  background: url("../images/icon-error.svg") 0px 0px no-repeat;
+  background-position: calc(100% - 24px) center;
+}
+
+.sign-up-form .error {
+  color: var(--primary-red);
+  font-weight: 500;
+  font-style: italic;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: right;
+}
+
+.sign-up-form .error.active {
+  padding-top: 6px;
 }
 
 .terms {
@@ -176,7 +205,7 @@ body {
   .intro h1 {
     font-size: 50px;
     line-height: 55px;
-    letter-spacing: -0.520833px;
+    letter-spacing: -0.5px;
     margin-bottom: 32px;
   }
 
@@ -184,7 +213,7 @@ body {
     padding: 40px;
   }
 
-  .sign-up-form input {
+  .sign-up-form label {
     margin-bottom: 20px;
   }
 
