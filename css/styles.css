@@ -120,6 +120,7 @@ body {
 }
 
 .sign-up-form input {
+  -webkit-appearance: none;
   padding: 15px;
   border: var(--grey) 1px solid;
   border-radius: 5px;
